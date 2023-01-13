@@ -1,10 +1,11 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,c,r,s=0;
+    int a;
     scanf("%d",&a);
-    b=(a*a);
-    c=a;
+    int b=(a*a);
+    int c=a;
+    int r,s=0;
     while(c!=0)
     {
         r=c%10;
@@ -15,11 +16,10 @@ int main()
     int q,p=0;
     while(d!=0)
     {
-        r=d%10;
-        p=p*10+r;
+        q=d%10;
+        p=p*10+q;
         d=d/10;
     }
-    if(p==b)
-    printf("True");
+    if(p==b) printf("True");
     else printf("False");
 }
