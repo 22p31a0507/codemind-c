@@ -1,11 +1,9 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,a;
+    int n;
     scanf("%d",&n);
-    for(i=1;i<=n;i++)
-    {
-        a=i*(i+1)*0.5;
-    }
-    printf("%d",a);
+    int s;
+    s=n*(n+1)/2;
+    printf("%d",s);
 }
