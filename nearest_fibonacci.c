@@ -1,16 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int f=0,s=1,n,next=0;
+    int f=0,s=1,next=0,n;
     scanf("%d",&n);
-    while(n>next)
-    {
+    while(n>next){
         next=f+s;
         f=s;
         s=next;
     }
-    if(n-f<s-n)
-    {
+    if(n-f<s-n){
         printf("%d",f);
     }
     else if(n-f==s-n)
